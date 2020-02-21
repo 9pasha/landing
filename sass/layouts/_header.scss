@@ -24,12 +24,25 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 570px) {
     .header__back-name {
         display: none;
     }
 
     .header__sign-name {
         display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        &__heading {
+            margin: 4px 0 0 0;
+            width: 80%;
+        }
+
+        &__logo-img {
+            width: 100%;
+        }
     }
 }

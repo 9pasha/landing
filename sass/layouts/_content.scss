@@ -12,6 +12,7 @@
         color: #000000;
         font-size: 28px;
         word-spacing: 3px;
+        text-align: center;
     }
 
     &__subtitle {
@@ -28,10 +29,6 @@
         align-items: center;
         padding-top: 55px;
 
-        &:nth-child(2n) {
-            background-color: #f8f8f8;
-        }
-
         &__card {
             width: 32.5%;
             max-width: 400px;
@@ -39,6 +36,69 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            &:nth-child(even) {
+                background-color: #f8f8f8;
+            }
+
+            &:nth-child(odd) {
+                box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+            }
+        }
+    }
+
+    .card {
+        &__img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        &__cards-block {
+            width: 95.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        &__cards-block {
+            flex-direction: column;
+        }
+
+        .card {
+            width: 60%;
+            margin-bottom: 23px;
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .content {    
+        padding: 25px 40px 0 40px;
+
+        &__heading {
+            font-size: 18px;
+            word-spacing: 1.5px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .content {
+        &__cards-block {
+            flex-direction: column;
+        }
+
+        .card {
+            width: 70%;
+            margin-bottom: 23px;
         }
     }
 }
