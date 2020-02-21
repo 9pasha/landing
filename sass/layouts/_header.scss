@@ -1,0 +1,35 @@
+.header {
+    max-width: 1600px;
+    width: 100%;
+    height: 71px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #e5e5e5;
+
+    &__heading {
+        width: 284px;
+        margin: 4px 0 0 25px;
+    }
+
+    &__back-name, &__sign-name {
+        text-transform: uppercase;
+    }
+
+    &__sign-name {
+        margin-left: 4px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__back-name {
+        display: none;
+    }
+
+    .header__sign-name {
+        display: none;
+    }
+}
