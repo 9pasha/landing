@@ -123,7 +123,7 @@ body {
   font-size: 1.2em;
 }
 .content__cards-block {
-  width: 84.5%;
+  width: 84%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,6 +145,69 @@ body {
 }
 .content .card__img {
   width: 100%;
+}
+.content .card__top-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 416px;
+}
+.content .card__top-block::after {
+  position: relative;
+  top: 20px;
+  background-color: blueviolet;
+  width: 90%;
+  height: 10px;
+  border-top: 1px solid black;
+  border-style: dashed;
+}
+.content .card__heading {
+  font-size: 28px;
+  padding-top: 27px;
+}
+.content .card__heading_blue {
+  color: #2b87dc;
+}
+.content .card__heading_green {
+  color: #1ab0b9;
+}
+.content .card__heading_violet {
+  color: #3a55af;
+}
+.content .card__cost {
+  font-size: 23px;
+  padding-top: 13px;
+}
+.content .card__bet-for-week {
+  padding-top: 9px;
+}
+.content .card__start-btn {
+  margin-top: 26px;
+  width: 160px;
+  height: 47px;
+  border-radius: 22px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+.content .card__start-btn:hover {
+  cursor: pointer;
+  background-color: #686868;
+  border: 2px solid #000000;
+}
+.content .card__start-btn_blue {
+  background-color: #3a55af;
+  color: #ffffff;
+  border: none;
+}
+.content .card__start-btn_green {
+  color: #1ab0b9;
+  border: 2px solid #1ab0b9;
+}
+.content .card__start-btn_violet {
+  background-color: #3a55af;
+  color: #ffffff;
+  border: none;
 }
 
 @media screen and (max-width: 1000px) {
