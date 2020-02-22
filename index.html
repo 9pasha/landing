@@ -22,9 +22,10 @@
     </header>
     <section class="content">
         <h2 class="content__heading">All news. All of the time. On every device.</h2>
-        <h3 class="content__subtitle">Subscription options</h3>
-        <div class="content__cards-block">
-            <article class="content__cards-block__card card">
+        <section class="content__subscription-block">
+            <h3 class="content__subtitle">Subscription options</h3>
+            <div class="content__cards-block">
+                <article class="content__cards-block__card card card-1">
                 <div class="card__top-block">
                     <img class="card__img" src="./assets/img-card-1.png" alt="city">
                     <h4 class="card__heading card__heading_blue">Digital</h4>
@@ -33,10 +34,24 @@
                     <button class="card__start-btn card__start-btn_blue">start now</button>
                 </div>
                 <div class="card__bottom-block">
-                    <button>details</button>
+                    <div class="card__states">   
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow.png" alt="state">
+                            <span class="card__state-name">Unlimited access to online content</span>
+                        </div>
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow.png" alt="state">
+                            <span class="card__state-name">Unlimited access plus breaking news alerts</span>
+                        </div>
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow.png" alt="state">
+                            <span class="card__state-name">A digital replica of the paper, emailed daily</span>
+                        </div>
+                    </div> 
+                    <a class="card__details-btn card__details-btn_blue">details</a>
                 </div>
-            </article>
-            <article class="content__cards-block__card card">
+                </article>
+                <article class="content__cards-block__card card card-2">
                 <div class="card__top-block">
                     <img class="card__img" src="./assets/img-card-2.png" alt="city">
                     <h4 class="card__heading card__heading_green">Print + Digital</h4>
@@ -45,10 +60,28 @@
                     <button class="card__start-btn card__start-btn_green">start now</button>
                 </div>
                 <div class="card__bottom-block">
-                    <button>details</button>
+                    <div class="card__states">   
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow-green.png" alt="state">
+                            <span class="card__state-name">Unlimited access to online content</span>
+                        </div>
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow-green.png" alt="state">
+                            <span class="card__state-name">Unlimited access plus breaking news alerts</span>
+                        </div>
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow-green.png" alt="state">
+                            <span class="card__state-name">A digital replica of the paper, emailed daily</span>
+                        </div>
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow-green.png" alt="state">
+                            <span class="card__state-name">Money-saving offers and weekly sales</span>
+                        </div>
+                    </div> 
+                    <a class="card__details-btn card__details-btn_green">details</a>
                 </div>
-            </article>
-            <article class="content__cards-block__card card">
+                </article>
+                <article class="content__cards-block__card card card-3">
                 <div class="card__top-block">
                     <img class="card__img" src="./assets/img-card-3.png" alt="city">
                     <h4 class="card__heading card__heading_violet">Special Offer</h4>
@@ -57,10 +90,53 @@
                     <button class="card__start-btn card__start-btn_violet">start now</button>
                 </div>
                 <div class="card__bottom-block">
-                    <button>details</button>
+                    <div class="card__states">   
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow-violet.png" alt="state">
+                            <span class="card__state-name">Unlimited access to online content</span>
+                        </div>
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow-violet.png" alt="state">
+                            <span class="card__state-name">Unlimited access plus breaking news alerts</span>
+                        </div>
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow-violet.png" alt="state">
+                            <span class="card__state-name">A digital replica of the paper, emailed daily</span>
+                        </div>
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow-violet.png" alt="state">
+                            <span class="card__state-name">Money-saving offers and weekly sales</span>
+                        </div>
+                        <div class="card__state">
+                            <img class="card__check-arrow" src="./assets/check-arrow-violet.png" alt="state">
+                            <span class="card__state-name">The print edition, delivered Sunday</span>
+                        </div>
+                    </div> 
+                    <a class="card__details-btn card__details-btn_violet">details</a>
                 </div>
-            </article>
-        </div>
+                </article>
+            </div>
+        </section>
+        <section class="content__offers-block offers-block">
+            <h3 class="offers-block__heading">offers</h3>
+            <div class="offers-block__cards-block">
+                <article class="offers-block__card small-card">
+                    <h4 class="small-card__heading">Sunday Only</h4>
+                    <span>99&#8373; / 4 weeks only then $1.99/week</span>
+                    <button>start now</button>
+                </article>
+                <article class="offers-block__card small-card">
+                    <h4 class="small-card__heading">Thursday-Sunday</h4>
+                    <span>99&#8373; / 4 weeks only then $1.99/week</span>
+                    <button>start now</button>
+                </article>
+                <article class="offers-block__card small-card">
+                    <h4 class="small-card__heading">Monday-Sunday</h4>
+                    <span>99&#8373; / 4 weeks only then $1.99/week</span>
+                    <button>start now</button>
+                </article>
+            </div>
+        </section>
     </section>
     <!-- <footer class="footer">
         <span class="footer__licence-name">2017</span>

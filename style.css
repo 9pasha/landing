@@ -109,6 +109,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+}
+.content__subscription-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 .content__heading {
   color: #000000;
@@ -196,7 +204,7 @@ body {
   border: 2px solid #000000;
 }
 .content .card__start-btn_blue {
-  background-color: #3a55af;
+  background-color: #2b87dc;
   color: #ffffff;
   border: none;
 }
@@ -208,6 +216,44 @@ body {
   background-color: #3a55af;
   color: #ffffff;
   border: none;
+}
+.content .card__bottom-block {
+  box-sizing: border-box;
+  padding: 31px 28px 0;
+  width: 100%;
+  height: 280px;
+}
+.content .card__state {
+  padding-bottom: 24px;
+}
+.content .card__state-name {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.content .card-2 .card__state-name {
+  margin-left: 9px;
+}
+.content .card-3 .card__state-name {
+  margin-left: 10px;
+}
+.content .card__details-btn {
+  margin: 0 auto;
+  text-transform: uppercase;
+  display: block;
+  width: 67px;
+  letter-spacing: 1px;
+}
+.content .card__details-btn_blue {
+  color: #2b87dc;
+  margin-top: 26px;
+}
+.content .card__details-btn_green {
+  color: #1ab0b9;
+  margin-top: 76px;
+}
+.content .card__details-btn_violet {
+  color: #3a55af;
+  margin-top: 36px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -244,6 +290,35 @@ body {
     width: 70%;
     margin-bottom: 23px;
   }
+}
+.offers-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 59px 176px 0;
+}
+.offers-block__heading {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.offers-block__cards-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45px;
+  width: 100%;
+}
+.offers-block__small-card {
+  height: 154px;
+}
+.offers-block .small-card {
+  display: flex;
+  flex-direction: column;
+}
+.offers-block .small-card__heading {
+  color: #1ab0b9;
+  font-size: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */

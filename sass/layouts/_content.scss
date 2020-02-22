@@ -7,6 +7,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+
+    &__subscription-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
 
     &__heading {
         color: #000000;
@@ -112,7 +121,7 @@
         }
 
         &__start-btn_blue {
-            background-color: #3a55af;
+            background-color: #2b87dc;
             color: #ffffff;
             border: none;
         }
@@ -126,6 +135,53 @@
             background-color: #3a55af;
             color: #ffffff;
             border: none;
+        }
+
+        &__bottom-block {
+            box-sizing: border-box;
+            padding: 31px 28px 0;
+            width: 100%;
+            height: 280px;
+        }
+
+        &__state {
+            padding-bottom: 24px;
+        }
+
+        &__state-name {
+            font-size: 15px;
+            margin-left: 5px;
+        }
+        
+        &-2 .card__state-name {
+            margin-left: 9px;
+        }
+
+        &-3 .card__state-name {
+            margin-left: 10px;
+        }
+
+        &__details-btn {
+            margin: 0 auto;
+            text-transform: uppercase;
+            display: block;
+            width: 67px;  
+            letter-spacing: 1px;
+
+            &_blue {
+                color: $blue;
+                margin-top: 26px;
+            }
+
+            &_green {
+                color: $aqua;
+                margin-top: 76px;
+            }
+
+            &_violet {
+                color: $violet;
+                margin-top: 36px;
+            }
         }
     }
 }
