@@ -296,7 +296,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 59px 176px 0;
+  padding: 59px 176px 59px;
 }
 .offers-block__heading {
   text-transform: uppercase;
@@ -315,10 +315,36 @@ body {
 .offers-block .small-card {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 .offers-block .small-card__heading {
   color: #1ab0b9;
   font-size: 28px;
+}
+.offers-block .small-card__cost {
+  padding-top: 23px;
+  font-size: 18px;
+}
+.offers-block .small-card__start-btn {
+  width: 160px;
+  height: 47px;
+  border-radius: 22px;
+  font-size: 16px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #1ab0b9;
+  color: #ffffff;
+  margin-top: 41px;
+}
+
+@media screen and (max-width: 1090px) {
+  .offers-block__cards-block {
+    flex-direction: column;
+  }
+  .offers-block .small-card {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

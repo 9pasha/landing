@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 59px 176px 0;
+    padding: 59px 176px 59px;
 
     &__heading {
         text-transform: uppercase;
@@ -25,10 +25,41 @@
     .small-card {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
 
         &__heading {
             color: $aqua;
             font-size: 28px;
+        }
+
+        &__cost {
+            padding-top: 23px;
+            font-size: 18px;
+        }
+
+        &__start-btn {
+            width: 160px;
+            height: 47px;
+            border-radius: 22px;
+            font-size: 16px;
+            border: none;
+            text-transform: uppercase;
+            background-color: $aqua;
+            color: #ffffff;
+            margin-top: 41px;
+        }
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .offers-block {
+        &__cards-block {
+            flex-direction: column;
+        }
+
+        .small-card {
+            margin-bottom: 20px;
         }
     }
 }
