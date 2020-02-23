@@ -1,0 +1,320 @@
+.login-block {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 1312px;
+    
+    &__header {
+        border-bottom: 1px solid #e5e5e5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__heading {
+        width: 284px;
+        padding: 29px 0 21px 0;
+    }
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1238px;
+
+    &__account-block {
+        margin: 0 auto;
+        width: 463px;
+    }
+}
+
+.progress-block {
+    width: 87%;
+    margin: 0 auto;
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
+
+    &__point-img {
+        width: 9px;
+        margin-left: 27%;
+    }
+
+    &__progress-line {
+        width: 100%;
+        height: 2px;
+        margin-top: 6px;
+        background-color: #e5e5e5;
+    }
+
+    &__line {
+        position: relative;
+        height: 2px;
+        background-color: #000000;
+        width: 28%;
+    }
+
+    &__steps-name {
+        margin-top: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 0px 6px 0px 0px;
+    }
+
+    &__name:nth-child(2) {
+        margin-left: -16px;
+    }
+
+    &__name {
+        color: #666666;
+
+        &_active {
+            color: #000000;
+        }
+    }
+}
+
+.digital-block {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 55px;
+    height: 89px;
+
+    &__heading {
+        font-size: 26px;
+        padding-top: 17px;
+    }
+
+    &__cost {
+        padding-top: 10px;
+        font-size: 16px;
+    }
+}
+
+.log-in-block {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__heading {
+        padding-top: 35px;
+        font-size: 28px;
+    }
+
+    &__text {
+        padding-top: 23px;
+        font-size: 15px;
+    }
+
+    &__btns-block {
+        width: 100%;
+        align-items: center;
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 40px;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        width: 181px;
+        height: 45px;
+        border: none;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 15px;
+
+        &_blue {
+            color: #f0f0f0;
+            background-color: $violet;
+            padding: 15px 41px 0 0;
+            
+            &::after {
+                content: '';
+                display: block;
+                position: relative;
+                width: 30px;
+                top: -19px;
+                left: 152px;
+                height: 30px;
+                background-image: url('../../assets/facebook.png');
+                background-repeat: no-repeat;
+            }
+        }
+
+        &_white {
+            color: #000000;
+            background-color: #eeeeee;
+            padding: 15px 61px 0 0;
+            
+            &::after {
+                content: '';
+                display: block;
+                position: relative;
+                width: 30px;
+                top: -23px;
+                left: 146px;
+                height: 30px;
+                background-image: url('../../assets/google.png');
+                background-repeat: no-repeat;
+            }
+        }
+
+        &:hover {
+            background-color: #cccccc;
+            cursor: pointer;
+        }
+    }
+}
+
+.form {
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    height: 338px;
+    width: 88%;
+    margin: 0 auto;
+
+    &__email-block {
+        margin-top: 66px;
+        display: flex;
+        font-size: 12px;
+        flex-direction: column;
+
+        input {
+            width: 98%;
+            height: 30px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid black;
+            margin-top: 5px;
+        }
+    }
+
+    &__password-block {
+        margin-top: 33px;
+        display: flex;
+        font-size: 12px;
+        flex-direction: column;
+        position: relative;
+
+        input {
+            width: 98%;
+            height: 30px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid black;
+            margin-top: 5px;
+        }
+    }
+
+    &__show-password {
+        position: absolute;
+        top: 17px;
+        right: 9px;
+        color: $aqua;
+        font-size: 15px;
+
+        &:hover {
+            cursor: pointer;
+            color: #cccccc;
+        }
+    }
+
+    &__price {
+        padding-top: 26px;
+        font-size: 18px;
+    }
+
+    &__btn {
+        width: 163px;
+        height: 46px;
+        border-radius: 30px;
+        margin: 0 auto;
+        margin-top: 55px;
+        background-color: #2b87dc;
+        color: #ffffff;
+        border: none;
+        font-size: 17px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.right-col {
+    background-color: #f0f0f0;
+    max-width: 363px;
+    width: 23%;
+    padding: 28px 62px 0;
+    display: flex;
+    flex-direction: column;
+
+    &__top-block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 26px;
+        height: 50px;
+    }
+
+    &__img {
+        margin-top: 6px;
+        height: 17px;
+    }
+
+    &__heading {
+        font-size: 18px;
+    }
+
+    &__bottom-block {
+        margin-top: 51px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__article {
+        padding-top: 29px;
+        line-height: 24px;
+    }
+
+    &__sales-text {
+        padding-top: 28px;
+        font-size: 15px;
+    }
+
+    &__total {
+        padding-top: 33px;
+        font-size: 15px;
+    }
+}
+
+
+.footer {
+    margin-top: 336px;
+    border-top: 1px solid #e5e5e5;
+
+    &__nav {
+        width: 36%;
+        padding: 35px 5px 0px 5px;
+    }
+}
