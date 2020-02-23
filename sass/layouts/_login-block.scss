@@ -357,4 +357,19 @@
     .left-col__account-block {
         width: 100%;
     }
+
+    .log-in-block__btns-block {
+        flex-direction: column;
+    }
+
+    .log-in-block {
+        &__footer {
+            margin-top: 250px;
+        }
+        &__nav {
+            padding: 35px 0px 0px 0px;
+            width: 95%;
+        }
+        
+    }
 }

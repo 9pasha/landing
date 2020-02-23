@@ -1008,9 +1008,21 @@ body {
     width: 100%;
   }
 }
-@media screen and (max-width: 500px) {
-  .log-in-block__footer {
+@media screen and (max-width: 463px) {
+  .left-col__account-block {
     width: 100%;
+  }
+
+  .log-in-block__btns-block {
+    flex-direction: column;
+  }
+
+  .log-in-block__footer {
+    margin-top: 250px;
+  }
+  .log-in-block__nav {
+    padding: 35px 0px 0px 0px;
+    width: 95%;
   }
 }
 .message-block {
