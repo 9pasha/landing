@@ -79,6 +79,8 @@ const loginPage = `<div class="login-block">
 loginBtn.addEventListener('click', () => {
     body.innerHTML = '';
     body.insertAdjacentHTML('beforeend', loginPage);
+    body.style.display = 'block';
+    body.style.minHeight = 'auto';
     postData();
     showPassword();
 });
