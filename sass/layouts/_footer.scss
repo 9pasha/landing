@@ -32,10 +32,18 @@
     }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1590px) {
     .footer {
-        padding: 0 80px;
+        padding: 0 39px;
 
+        &__nav {
+            width: 31%;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .footer {
         &__nav {
             width: 60%;
         }

@@ -75,6 +75,9 @@ body {
   width: 284px;
   margin: 4px 0 0 25px;
 }
+.header__back-block:hover, .header__sign-in-block:hover {
+  cursor: pointer;
+}
 .header__back-name, .header__sign-name {
   text-transform: uppercase;
 }
@@ -236,6 +239,63 @@ body {
 .content .card-3 .card__state-name {
   margin-left: 10px;
 }
+.content .card__checkbox-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7px;
+}
+.content .card__checkbox-itm {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 23px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.content .card__checkbox-itm input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.content .card__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #f8f8f8;
+  border: 1px solid #d6d6d6;
+}
+.content .card__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.content .card__checkbox-block input:checked ~ .card__checkmark:after {
+  display: block;
+}
+.content .card__checkbox-block .card__checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #383838;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.content .card__checkbox-text {
+  font-size: 16px;
+  padding-left: 28px;
+}
 .content .card__details-btn {
   margin: 0 auto;
   text-transform: uppercase;
@@ -245,7 +305,7 @@ body {
 }
 .content .card__details-btn_blue {
   color: #2b87dc;
-  margin-top: 26px;
+  margin-top: -7px;
 }
 .content .card__details-btn_green {
   color: #1ab0b9;
@@ -593,10 +653,15 @@ body {
   color: #979595;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1590px) {
   .footer {
-    padding: 0 80px;
+    padding: 0 39px;
   }
+  .footer__nav {
+    width: 31%;
+  }
+}
+@media screen and (max-width: 1400px) {
   .footer__nav {
     width: 60%;
   }

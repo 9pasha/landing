@@ -161,6 +161,71 @@
             margin-left: 10px;
         }
 
+        &__checkbox-block {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 7px;
+        }
+
+        &__checkbox-itm {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-bottom: 23px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        &__checkbox-itm input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        &__checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: #f8f8f8;
+            border: 1px solid #d6d6d6;
+        }
+          
+        &__checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+          
+        &__checkbox-block input:checked ~ .card__checkmark:after {
+            display: block;
+        }
+          
+        &__checkbox-block .card__checkmark:after {
+            left: 5px;
+            top: 1px;
+            width: 4px;
+            height: 8px;
+            border: solid #383838;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        &__checkbox-text {
+            font-size: 16px;
+            padding-left: 28px;
+        }
+
         &__details-btn {
             margin: 0 auto;
             text-transform: uppercase;
@@ -170,7 +235,7 @@
 
             &_blue {
                 color: $blue;
-                margin-top: 26px;
+                margin-top: -7px;
             }
 
             &_green {

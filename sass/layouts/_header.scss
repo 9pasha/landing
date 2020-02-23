@@ -15,6 +15,12 @@
         margin: 4px 0 0 25px;
     }
 
+    &__back-block, &__sign-in-block {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
     &__back-name, &__sign-name {
         text-transform: uppercase;
     }
