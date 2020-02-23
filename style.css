@@ -975,13 +975,56 @@ body {
   font-size: 15px;
 }
 
-.footer {
+.log-in-block__footer {
   margin-top: 336px;
   border-top: 1px solid #e5e5e5;
 }
-.footer__nav {
+.log-in-block__nav {
   width: 36%;
   padding: 35px 5px 0px 5px;
+}
+
+@media screen and (max-width: 1400px) {
+  .log-in-block__nav {
+    width: 56%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .right-col {
+    padding: 28px 10px 0;
+  }
+}
+@media screen and (max-width: 950px) {
+  .log-in-block__nav {
+    width: 86%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .right-col {
+    display: none;
+  }
+
+  .left-col {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .log-in-block__footer {
+    width: 100%;
+  }
+}
+.message-block {
+  position: absolute;
+  margin: 0 auto;
+  width: 40%;
+  height: 90px;
+  top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cccccc;
+  border-radius: 20px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

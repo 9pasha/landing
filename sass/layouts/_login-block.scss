@@ -309,12 +309,52 @@
 }
 
 
-.footer {
-    margin-top: 336px;
-    border-top: 1px solid #e5e5e5;
+.log-in-block {
+    &__footer {
+        margin-top: 336px;
+        border-top: 1px solid #e5e5e5;
+    }
 
     &__nav {
         width: 36%;
         padding: 35px 5px 0px 5px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .log-in-block {
+        &__nav {
+            width: 56%;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .right-col {
+        padding: 28px 10px 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .log-in-block {
+        &__nav {
+            width: 86%;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .right-col {
+        display: none;
+    }
+
+    .left-col {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 463px) {
+    .left-col__account-block {
+        width: 100%;
     }
 }
