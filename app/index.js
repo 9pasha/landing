@@ -37,7 +37,7 @@ const loginPage = `<div class="login-block">
                     </button>
                 </div>
             </div>
-            <form class="form" method="">
+            <form class="form" method="" action="#" onsubmit="return false;">
                 <div class="form__email-block">
                     <span>Email</span>
                     <input class="email" type="text" name="email" placeholder="Email">
@@ -96,29 +96,27 @@ async function request() {
     const email = document.querySelector('.email').value;
     const password = document.querySelector('.password').value;
 
-    let response = await fetch('http://google.com', {
+    let response = await fetch('./back.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8',
         },
         body: JSON.stringify({
           email: email,
-          password: password,
-        }),
+          password: password
+        })
     });
-            
-    let result = await response.json();
 
-    const messageBlock = `<div class="message-block">
-        <span>Status: ${message}</span>
-    </div>`;
-    
-    if (response.ok) {
+    try {
+        const json = await response.json();
         const message = 'Success!';
-        body.insertAdjacentHTML('beforeend', messageBlock);
-    } else {
-        const message = 'Error!';
-        body.insertAdjacentHTML('beforeend', messageBlock);
+        body.insertAdjacentHTML('beforeend', `<div class="message-block">
+            <span>Status: ${message}</span>
+        </div>`);
+    } catch (error) {
+        body.insertAdjacentHTML('beforeend', `<div class="message-block">
+            <span>Status: ${error}</span>
+        </div>`);
     }
 }
 
